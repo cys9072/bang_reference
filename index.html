@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <meta charset="utf-8">
+  <title>레퍼런스_BANG</title>
+  <!--제이쿼리-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!--스와이퍼, css 파일-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <!-- 슬릭 cs 파일 -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- 슬릭 js -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!--스와이퍼 js-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!--일반 내 css파일-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--폰트어썸-->
+  <script src="https://kit.fontawesome.com/684e97b7f2.js" crossorigin="anonymous"></script>
+
+</head>
+<!--아이콘 모음 sns: 
+  유튜브:<i class="fab fa-youtube"></i> 
+  인스타:<i class="fabfa-instagram"></i> 
+  페이스북:<i class="fab fa-facebook"></i> 
+  카카오톡: 
+  x 버튼: <i class="fas fa-times"></i>
+  화살표 인디케이터 좌:<i
+    class="fas fa-angle-left"></i> 우:<i class="fas fa-angle-right"></i> 화살표
+    인디케이터(백그라운드 원형) 좌:<i class="fas fa-chevron-circle-left"></i> 우:<i class="fas
+    fa-chevron-circle-right"></i> 햄버거 메뉴:<i class="fas fa-bars"></i> 돋보기:<i
+    class="fas fa-search"></i> 눈깔:<i class="fas fa-eye"></i> 카트:<i class="fas
+    fa-shopping-cart"></i> 위치:<i class="fas fa-location-arrow"></i> 장바구니:<i
+    class="fas fa-shopping-bag"></i> 상반신모양: <i class="far fa-user"></i> 상반신모양(색채움):
+    <i class="fas fa-user-alt"></i> 수화기 모양: <i class="fas fa-phone"></i> 하트: <i
+    class="fas fa-heart"></i> 지구본 : <i class="fas fa-globe"></i> 
+    -->
+<!--     
+    문제해결
+
+    z-index 안될때 부모 요소에
+    포지션 릴레티브 주면됨 
+    
+    가로 스크롤 해결
+    overflow-x: hidden;
+    overflow-y:auto; 
+
+    폰트 어썸으로 가상클래스에 넣기
+    .p1::before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    }
+
+  Solid → 900
+Regular, Brands → 400
+Light → 300
+-->
+
+<body>
+  <!--\\\\\\\\\\\\\\\\\\\\ start\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+  <!-- 헤더 -->
+  <header>
+    <nav>
+      <section class="top_nav">
+        <div class="top_nav_wrap">
+          <div class="ham_wrap">
+            <div class="hambuger_">
+              <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="ham_menu">
+              <div class="ham_close">
+                <i class="fas fa-times"></i>
+              </div>
+              <div class="ham_menu_parant">
+                <div class="ham_content_title">
+                  <span class="ham_content_title_text_zero">SPEAKER</span>
+                </div>
+              </div>
+
+              <div class="ham_menu_parant">
+                <div class="ham_content_title">
+                  <span class="ham_content_title_text_fir">HEADPHONE</span>
+                </div>
+              </div>
+              <div class="ham_menu_parant">
+                <div class="ham_content_title">
+                  <span class="ham_content_title_text_sec">TV</span>
+                </div>
+              </div>
+              <div class="ham_menu_parant">
+                <div class="ham_content_title">
+                  <span class="ham_content_title_text_thir">ACCESSORY</span>
+                </div>
+              </div>
+              <div class="ham_menu_parant">
+                <div class="ham_content_title">
+                  <span class="ham_content_title_text_four">OFFICE</span>
+                </div>
+              </div>
+              <div class="ham_menu_parant">
+                <div class="ham_content_title">
+                  <span class="ham_content_title_text_fifth">STORY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h1>BANG & OLUFSEN</h1>
+          </div>
+
+          <div class="icons_">
+            <div class="icons_wrap">
+              <div class="icons_parant">
+                <span class="serch_"></span>
+                <input type="text" class="serch_inp">
+                <i class="fas fa-search"></i>
+              </div>
+              <div>
+                <i class="fas fa-location-arrow"></i>
+              </div>
+              <div>
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom_nav">
+        <div class="bottom_nav_text">
+          <div class="ex_1"><a href="#">SPEAKER</a></div>
+          <div class="ex_1"><a href="#">HEADPHONE</a></div>
+          <div class="ex_1"><a href="#">TV</a></div>
+          <div class="ex_1"><a href="#">ACCESSORY</a></div>
+          <div class="ex_1"><a href="#">HOME OFFICE</a></div>
+          <div class="ex_1"><a href="#">STORY</a></div>
+        </div>
+      </section>
+    </nav>
+  </header>
+
+  <main>
+    <div class="swiper-container sw1">
+      <div class=" swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="main_bg_1">
+            <div class="main_text">
+              <h3>BEOPLAY 195</h3>
+              <span>―</span>
+              <h2>어댑티브 ANC 헤드폰</h2>
+              <h5>95년의 전문성이 녹아 있는 탁월한 Beoplay H95 오버이어 헤드폰은 최첨단 노이즈 캔슬링을 제공합니다. </h5>
+              <div class="main_text_btn">
+                <button><span class="main_text_btn_line">자세히 알아보기</span></button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+
+          <div class="main_bg_2">
+            <div class="main_text">
+              <h3>Beoplay E8 3rd Gen</h3>
+              <span>―</span>
+              <h2>비오플레이 컴팩트</h2>
+              <h5>최대 35시간의 향상된 배터리 수명, QI 인증 무선 충전 케이스 및 Bluetooth 5.1 지원으로 끊김없이 완벽한 청취 경험을 보장하는 진정한 무선 인이어 이어폰의 최신
+                버전입니다.</h5>
+              <div class="main_text_btn">
+                <button><span class="main_text_btn_line">자세히 알아보기</span></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+
+          <div class="main_bg_3">
+            <div class="main_text">
+              <h3>Beolab 50</h3>
+              <span>―</span>
+              <h2>하이엔드 비오랩 50</h2>
+              <h5>혁신적인 오디오 기술과 우아한 디자인, 세련된 장인정신이 결합된 하이엔드 액티브 라우드 스피커입니다.</h5>
+              <div class="main_text_btn">
+                <button><span class="main_text_btn_line">자세히 알아보기</span></button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="abc"></div>
+  </main>
+
+  <article class="vision_">
+    <section class="vision_text">
+      <h3>A VISION OF SOUND</h3>
+      <h5>시간이 지나면서 점점 더 추가하세요. 커넥티드 스피커는 모든 인기 스트리밍 서비스 및 장치와 연동되므로 새로운 것을 배울 필요가 없습니다.</h5>
+    </section>
+
+    <section class="vision_imag"></section>
+    <div class="vision_btn">
+      <button><span class="vision_line">스토리 보러가기</span></button>
+    </div>
+  </article>
+
+  <article class="bang_video_">
+    <video
+      src="https://videos.ctfassets.net/8cd2csgvqd3m/64vB3HeBbsbKorv4GLnAdM/2918756b63fb55055c805b262d55daa4/B_O_-_Product_Film__Level___16x9___no_graphic_.mp4"
+      autoplay muted loop></video>
+  </article>
+
+  <article class="belo_">
+    <section class="belo_top">
+      <div class="bg_hover_box">
+        <div class="belo_top_first">
+
+          <h3>BELOLAB 20</h3>
+          <h4>세련되었지만 거침없는 사운드</h4>
+
+          <div class="belo_action_box_wrap">
+            <h5 class="belo_action_box_color_text">BLACK</h5>
+
+            <div class="belo_action_box">
+              <div class="first_black_btn">
+                <i class="fas fa-circle"></i>
+              </div>
+
+              <div class="first_white_btn">
+                <i class="fas fa-circle"></i>
+              </div>
+
+              <div class="first_iron_btn">
+                <i class="fas fa-circle"></i>
+              </div>
+            </div>
+
+            <div class="belo_action_box_price">
+              <span>€300</span>
+            </div>
+
+            <div class="belo_action_box_btn">
+              <button>자세히 보기 ></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="bg_hover_box">
+        <div class="belo_top_second">
+
+          <h3>BEOSOUND BALANCE</h3>
+          <h4>공간과 음악의 연결</h4>
+
+          <div class="belo_action_box_wrap">
+            <h5 class="belo_action_box_color_text">Natural Oak</h5>
+
+            <div class="belo_action_box">
+              <div class="second_naturaloak_btn">
+                <i class="fas fa-circle"></i>
+              </div>
+
+              <div class="second_black_btn">
+                <i class="fas fa-circle"></i>
+              </div>
+
+              <div class="second_golden_btn">
+                <i class="fas fa-circle"></i>
+              </div>
+            </div>
+
+            <div class="belo_action_box_price">
+              <span>€2,500</span>
+            </div>
+
+            <div class="belo_action_box_btn">
+              <button>자세히 보기 ></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="bg_hover_box">
+        <div class="belo_top_third">
+
+          <h3>BEOPLAY A9</h3>
+          <h4>음악에 대한 미와 열정</h4>
+
+          <div class="belo_action_box_wrap">
+            <h5 class="belo_action_box_color_text">색깔입력하는곳</h5>
+
+            <div class="belo_action_box">
+              <div class="third_golden_btn">
+                <i class="fas fa-circle"></i>
+              </div>
+
+              <div class="third_black_btn">
+                <i class="fas fa-circle"></i>
+              </div>
+
+              <div class="third_white_btn">
+                <i class="fas fa-circle"></i>
+              </div>
+            </div>
+
+            <div class="belo_action_box_price">
+              <span>€2,699</span>
+            </div>
+
+            <div class="belo_action_box_btn">
+              <button>자세히 보기 ></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="belo_bottom">
+      <div class="bg_hover_box">
+        <div class="belo_bottom_first">
+
+          <h3>BEOSOUND 1</h3>
+          <h4>휴대용 WIFI 블루투스 스피커</h4>
+
+          <div class="belo_action_box_wrap">
+            <h5 class="belo_action_box_color_text">BLACK</h5>
+
+            <div class="belo_action_box">
+              <div class="first_brasstone_btn_bottom">
+                <i class="fas fa-circle"></i>
+              </div>
+
+              <div class="first_natural_btn_bottom">
+                <i class="fas fa-circle"></i>
+              </div>
+
+              <div class="first_bronze_btn_bottom">
+                <i class="fas fa-circle"></i>
+              </div>
+            </div>
+
+            <div class="belo_action_box_price">
+              <span>€300</span>
+            </div>
+
+            <div class="belo_action_box_btn">
+              <button>자세히 보기 ></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="bg_hover_box">
+        <div class="belo_bottom_second">
+
+          <h3>BEOLAB 90</h3>
+          <h4>사운드의 비젼</h4>
+
+          <div class="belo_action_box_wrap">
+            <h5 class="belo_action_box_color_text">CUSTOM</h5>
+
+            <div class="belo_action_box">
+              <div class="second_btn">
+                <i class="fas fa-circle"></i>
+              </div>
+
+            </div>
+
+            <div class="belo_action_box_price">
+              <span>+α</span>
+            </div>
+
+            <div class="belo_action_box_btn">
+              <button>자세히 보기 ></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="bg_hover_box">
+        <div class="belo_bottom_third">
+
+          <h3>BEOLAB 50</h3>
+          <h4>사운드의 미래</h4>
+
+          <div class="belo_action_box_wrap">
+            <h5 class="belo_action_box_color_text">CUSTOM</h5>
+
+            <div class="belo_action_box">
+              <div class="third_golden_btn">
+                <i class="fas fa-circle"></i>
+              </div>
+            </div>
+
+            <div class="belo_action_box_price">
+              <span>+α</span>
+            </div>
+
+            <div class="belo_action_box_btn">
+              <button>자세히 보기 ></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </article>
+
+  <article class="latest">
+    <!-- Swiper -->
+    <div class="swiper-container sw2">
+
+      <div class="sw2_title">
+        <div>
+          <h3>Latest News</h3>
+        </div>
+        <div>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div>
+            <img src="https://i.ibb.co/BZsfJzz/s-1.png" alt="">
+          </div>
+          <div class="sw_text">
+            <h4>The Story Of Shape</h4>
+            <h5>Amet consectetur adipisicing elit. Delectus, nemo nulla. Fugiat saepe eos deleniti!</h5>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div>
+            <img src="https://i.ibb.co/YQ4b0Q0/s-2.png" alt="">
+          </div>
+          <div class="sw_text">
+            <h4>Bang & Olufsen x ALYX 9SM</h4>
+            <h5>ALYX와의 콜라보, 더욱 생생한 소리를 들어보세요</h5>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div>
+            <img src="https://i.ibb.co/JkL3WPF/s-4.png" alt="">
+          </div>
+          <div class="sw_text">
+            <h4>Music Matter</h4>
+            <h5>Dolor sit expedita, Bang.</h5>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div>
+            <img src="https://i.ibb.co/5592m84/s-5.png" alt="">
+          </div>
+          <div class="sw_text">
+            <h4>On X Bang & Olufsen</h4>
+            <h5>세계적인 수준의 러너들에게 영감을 주다</h5>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div>
+            <img src="https://i.ibb.co/8D5qwKm/s-6.png" alt="">
+          </div>
+          <div class="sw_text">
+            <h4>Music Matter_ver2</h4>
+            <h5>A LIVE ONLINE PERFORMANCE FROM THE VIRTUAL COPENHAGEN SUMMER JAZZ 2020</h5>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div>
+            <img src="https://i.ibb.co/DghdNVq/s-7.png" alt="">
+          </div>
+          <div class="sw_text">
+            <h4>Jacob Jensen</h4>
+            <h5>DESIGN MATTERS: 아이콘</h5>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div>
+            <img src="https://i.ibb.co/WBKHgyQ/s-3.png" alt="">
+          </div>
+          <div class="sw_text">
+            <h4>Sound Stories</h4>
+            <h5>NEO KAPLANIS, TECHNOLOGY SPECIALIST, SOUND DESIGN</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </article>
+
+  <footer>
+    <div class="foo_wrap">
+      <div class="top_foo">
+        <div class="top_foo_text">
+          <div>
+            <img src="https://i.ibb.co/KFHwYhf/foo-logo.png" alt="">
+          </div>
+          <h4><span class="foo_line">CONTACTS</span></h4>
+          <h4><span class="foo_line">BANG IN THE WORLD</span></h4>
+        </div>
+        <div class="top_foo_desc">
+          <div>
+            <h4>SUBSCRIBE TO THE NEWSLETTER</h4>
+          </div>
+          <div>
+            <input type="text" placeholder="Email">
+            <button><span class="foo_line_btn">SUBSCRIPT</span></button></input>
+          </div>
+          <div>
+            <input type="checkbox">
+            <span>I accept the <span style="font-weight: 600; color:white;">privacy palicy</span></span>
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom_foo">
+        <div class="bottom_foo_text">
+          <span>
+            © 2020 SMEG S.p.A. VAT 01555030350<br>
+            Smeg S.p.A - Via Leonardo da Vinci, 4 42016 Guastalla (RE) Italy<br>
+            Phone +39 0522 821 1 Fax +39 0522 821 452 Email smeg@smeg.it
+          </span>
+          <div style="margin-top: 0.7rem;">
+            <ul>
+              <li><a href="#"><span class="bottom_line">LEGAL</span></a></li>
+              <li>|</li>
+              <li><a href="#"><span class="bottom_line">DISCLAIMER</span></a></li>
+              <li>|</li>
+              <li><a href="#"><span class="bottom_line">PRIVACY POLICY</span></a></li>
+              <li>|</li>
+              <li><a href="#"><span class="bottom_line">COOKIE DISCLAIMER</span></a></li>
+              <li>|</li>
+              <li><a href="#"><span class="bottom_line">SITEMAP</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom_foo_sns">
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="bang.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1224 @@
+/*깔끔 한글 폰트   font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*커엽 한글 폰트 + 약간 고급에 어울림 font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+/*깔끔 영어 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+/* 고오급 영어 폰트  font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+/* 각진 영어 폰트  font-family: 'Orbitron', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+/*필기체 영어 글씨 */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* Dela Gothic One 두꺼운 영어 폰트 + 약간 고급 font-family: 'Dela Gothic One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+  transition: 0.7s;
+  
+
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: black;
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3 {font-family: 'Montserrat', sans-serif;}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 2rem;
+
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-weight: 300;
+  line-height: 1.2rem;
+
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+
+}
+
+h5 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #8e8e8e;
+
+}
+
+a:link {
+  color: powderblue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: black;
+}
+
+button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid white;
+  transition: 0.7s;
+  color: black;
+  background: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-: black;
+  color: white;
+
+}
+
+ul li {
+  list-style: none;
+}
+
+#all_bodyy {
+  width: 100%;
+  height: 100%;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡstartㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/* 모바일 버전 */
+@media (min-width:0px) and (max-width:1019px) {
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ랩탑 버전 */
+@media (min-width:1000px) {
+body{
+  
+}
+
+header {
+  width:100%;
+  height: 150px;
+  background:url("https://i.ibb.co/W53S6Pr/bg-4.jpg");
+ border-bottom:1px solid rgb(242, 237, 215);
+}
+
+.top_nav {
+  width: 100%;
+  height: 60%;
+  padding:1.5rem 2rem 0 2rem; 
+}
+
+.top_nav_wrap{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding:1.5rem 2rem 0 2rem; 
+  margin:0 auto;
+}
+
+.top_nav_wrap> div {
+  width: 33.3%;
+}
+
+.top_nav h1 {
+  text-align: center;
+  font-size: 2vw;
+  color:rgb(242, 237, 215);
+  font-weight: 600;
+}
+
+
+.hambuger_,
+.icons_ {
+  font-size: 2rem;
+  color:rgb(242, 237, 215);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.hambuger_ i:hover,
+.icons_ i:hover {
+  color:crimson;
+}
+
+.ham_close{
+  width:90% !important;
+  position: relative;
+}
+
+.ham_close i {
+  color:white;
+  font-size: 1.8rem;
+  position: absolute;
+  right:0%;
+  cursor: pointer;
+}
+
+.ham_close i:hover {
+  transform:rotate(360deg);
+}
+.ham_menu {
+  width:40% !important;
+  height: 100vh;
+  padding:5rem 0 0 3rem;
+  background:black;
+  z-index: 100;
+  position: absolute;
+  left:-40%;
+  top:0%;
+  transition: 1s;
+}
+
+.ham_menu_parant {
+  width:35%;
+}
+
+.ham_menu span {
+  display: inline-block;
+  width:100%;
+  color:white;
+  font-size: 2rem;
+}
+
+.ham_content_title {
+  width:100% !important;
+  height: 100%;
+  padding:2rem 0;
+  cursor: pointer;
+}
+.ham_menu_parant {
+  position: relative;
+}
+
+.ham_content_title span::before {
+  content: "";
+  width:10%;
+  height: 1.5px;
+  background:white;
+  position: absolute;
+  bottom:10%;
+  left:0%;
+  transition: 0.5s;
+  transform-origin: left;
+  transform:scaleX(1);
+}
+
+
+.ham_content_title::before {
+  content: "";
+  width:300px;
+  height: 1.5px;
+  background:white;
+  position: absolute;
+  bottom:10%;
+  transition: 0.5s;
+  transform-origin: left;
+  transform:scaleX(0);
+}
+
+.ham_content_title:hover::before{
+transform:scaleX(1);
+}
+
+.ham_content_title:hover .ham_content_title_text_zero {
+  margin-left: 150px;
+}
+
+.ham_content_title:hover .ham_content_title_text_fir {
+  margin-left: 100px;
+}
+
+.ham_content_title:hover .ham_content_title_text_sec {
+  margin-left: 260px;
+}
+.ham_content_title:hover .ham_content_title_text_thir {
+  margin-left: 120px;
+}
+.ham_content_title:hover .ham_content_title_text_four {
+    margin-left: 190px;
+}
+.ham_content_title:hover .ham_content_title_text_fifth {
+    margin-left: 200px;
+}
+
+.icons_ {
+  text-align: right;
+}
+
+.icons_wrap{
+  width:100%;
+  display: flex;
+  justify-content:flex-end;
+}
+
+.icons_ i{
+  margin-left: 1.5rem;
+  
+}
+
+
+
+.icons_parant{
+  width:100%;
+  position: relative;
+
+}
+.serch_inp{
+  width:200px;
+  font-family: fontAwesome;
+  background:none;
+  border:none;
+  color:white;
+  position: absolute;
+  bottom:0%;
+  left:30%;
+}
+
+.serch_inp:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+  
+}
+
+
+.serch_inp::placeholder {
+  color: rgb(95, 95, 95);
+}
+
+.icons_parant i {
+  margin:0;
+}
+
+.serch_::before{
+  content: "";
+  width:230px;
+  height: 1px;
+  background:white;
+  position: absolute;
+  right:0%;
+  bottom:0%;
+  transition: 0.7s;
+  transform:scaleX(0);
+  transform-origin: right;
+}
+
+.icons_parant:hover .serch_::before{
+  transform:scaleX(1);
+}
+
+.bottom_nav{
+  width:100%;
+  height: 100%;
+  margin-top: 1rem;
+}
+
+.bottom_nav_text {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin:0 auto;
+}
+
+.bottom_nav_text div {
+  width:175px;
+  text-align: center;
+}
+
+.bottom_nav_text div a{
+  display: inline-block;
+  width:165px;
+  height: 40px;
+  padding: 10px 0;
+  font-size: 1rem;
+  color:rgb(242, 237, 215);
+  font-weight: 600;
+  transition: 0.7s;
+  position: relative;
+}
+
+
+.ex_1{
+  position: relative;
+}
+
+.ex_1::before,
+.ex_1::after {
+  content: "";
+  width:80%;
+  height: 3px;
+  background-color: rgb(231, 228, 228);
+  position: absolute;
+  left:10%;
+  bottom:0;
+  transform:scaleX(0);
+  transition: 0.7s;
+}
+
+.ex_1::before{
+    transform-origin: left;
+}
+
+.ex_1::after{
+  top:0%;
+  transform-origin: right;
+}
+
+.ex_1:hover::before,
+.ex_1:hover::after{
+  transform:scaleX(1);
+}
+
+
+
+/* 메인 */
+.sw1 {
+  width:100%;
+  height: 800px;
+  background:url("https://i.ibb.co/W53S6Pr/bg-4.jpg");
+  background-size:cover;
+}
+
+/* 버튼 위치 이동 */
+.sw1 .swiper-button-prev, .swiper-button-next {
+  top:50%;
+}
+
+.sw1 .swiper-button-prev{
+  left: 7%;
+}
+
+.sw1 .swiper-button-next{
+  right:7%;
+}
+
+/* 버튼 색, 크기 변경 */
+:root {
+  --swiper-navigation-size:40px;
+  --swiper-theme-color:#8e8e8e;
+}
+
+/* 버튼 호버값 주기 */
+.swiper-button-prev:hover {
+  --swiper-theme-color: white;
+}
+.swiper-button-next:hover {
+  --swiper-theme-color: white;
+
+}
+
+.main_bg_1 {
+  width:100%;
+  height: 800px;
+  position: relative;
+  background:url("https://i.ibb.co/YdmtMtG/main-001.png") no-repeat;
+  background-size:auto;
+  background-position: center 150px;
+}
+
+.main_bg_2 {
+  width:100%;
+  height: 800px;
+  position: relative;
+  background:url("https://i.ibb.co/7pRMZP4/main-02.png") no-repeat;
+  background-size:auto;
+  background-position: center 100px;
+}
+
+.main_bg_3 {
+  width:100%;
+  height: 800px;
+  position: relative;
+  background:url("https://i.ibb.co/NFV2bSh/main-03.png") no-repeat;
+  background-size:auto;
+  background-position: center 100px;
+}
+
+.main_text {
+  width:500px;
+  position: absolute;
+  top:20%;
+  left:18%;
+}
+
+.main_text h3 {
+  color:rgb(185, 180, 158);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main_text span {
+  color:rgb(185, 180, 158);
+  font-size: 3rem;
+}
+
+.main_text h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding:1.5rem 0;
+  color:rgb(242, 237, 215);
+}
+
+.main_text h5 {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color:rgb(202, 202, 202);
+}
+
+.main_text_btn{
+  text-align: left;
+  margin:3rem 0;
+}
+
+.main_text_btn button {
+  width:250px;
+  height: 55px;
+  border:1px solid rgb(209, 207, 207)
+}
+.main_text_btn button span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color:rgb(242, 237, 215);
+  position: relative;
+}
+
+
+.main_text_btn_line::before {
+  content: "";
+  border-radius: 0 3px 3px 0;
+  width:20px;
+  height: 2px;
+  background:white;
+  position: absolute;
+  top:15%;
+  right:-15%;
+  transition: 0.7s;
+  transform-origin: left;
+  transform:scale(0);
+  transform:rotateZ(0deg);
+  opacity: 0;
+}
+
+.main_text_btn_line::after{
+  content: "";
+  border-radius: 0 3px 3px 0;
+  width:20px;
+  height: 2px;
+  background:white;
+  position: absolute;
+  right:-15%;
+  bottom:15%;
+  transition: 0.7s;
+  transform-origin: left;
+  transform:scale(0);
+  transform:rotateZ(0deg);
+  opacity: 0;
+}
+
+.main_text_btn:hover .main_text_btn_line::before{
+  opacity: 1;
+  transition: 0.7s;
+  transform:rotateZ(382deg);
+  
+}
+
+.main_text_btn:hover .main_text_btn_line{
+  color:white;
+}
+
+.main_text_btn:hover .main_text_btn_line::after{
+  opacity: 1;
+  transition: 0.7s;
+  transform:rotateZ(-382deg);
+}
+
+
+/* 비전 아티클 */
+.vision_ {
+  width:100%;
+  height:650px;
+  padding:65px 0 40px 0;
+  background:rgb(34, 26, 16);
+  position: relative;
+}
+
+.vision_text {
+  width:30%;
+  position: absolute;
+  top:50%;
+  left:25%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+}
+
+.vision_text h3 {
+  font-size: 2rem;
+  color:#c7c7c7;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.vision_text h5 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color:#c7c7c7;
+  font-weight: 300;
+
+}
+
+.vision_imag {
+  width:100%;
+  height: 95%;
+  background:url("https://i.ibb.co/4PPYfwt/vision-img.png") no-repeat;
+  background-size:cover;
+  background-position: center center;
+}
+
+.vision_btn {
+  position: absolute;
+  left: 10%;
+  bottom:20%;
+  opacity: 0;
+}
+
+.vision_btn button {
+  
+  width:250px;
+  height: 55px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color:silver;
+  border:1px solid silver;
+}
+
+
+
+.vision_line::before {
+  content: "";
+  border-radius: 0 3px 3px 0;
+  width:20px;
+  height: 2px;
+  background:white;
+  position: absolute;
+  top:35%;
+  right:5%;
+  transition: 0.7s;
+  transform-origin: left;
+  transform:scale(0);
+  transform:rotateZ(0deg);
+  opacity: 0;
+}
+
+.vision_line::after{
+  content: "";
+  border-radius: 0 3px 3px 0;
+  width:20px;
+  height: 2px;
+  background:white;
+  position: absolute;
+  right:5%;
+  bottom:35%;
+  transition: 0.7s;
+  transform-origin: left;
+  transform:scale(0);
+  transform:rotateZ(0deg);
+  opacity: 0;
+}
+
+.vision_btn:hover .vision_line::before{
+  opacity: 1;
+  transition: 0.7s;
+  transform:rotateZ(382deg);
+  
+}
+
+.vision_btn:hover .vision_line{
+  color:white;
+}
+
+.vision_btn:hover .vision_line::after{
+  opacity: 1;
+  transition: 0.7s;
+  transform:rotateZ(-382deg);
+}
+/* 비디오 */
+.bang_video_ {
+}
+
+.bang_video_ video {
+  display: block;
+
+  object-fit: cover;
+  width:100%;
+  height: 350px;
+}
+
+/* 벨로 제품 아티클 */
+.belo_ {
+  width:100%;
+  height:100%;
+  background:rgb(36, 28, 17);
+  padding:40px 0 20PX 0;
+}
+.belo_ section {
+  width:1000px;
+  height: 380px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.bg_hover_box {
+  width:33.3%;
+  cursor: pointer;
+}
+
+.bg_hover_box:hover {
+  background:rgb(87, 38, 26);
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.belo_top h3,
+.belo_bottom h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color:white;
+  padding:1rem 0;
+}
+
+.belo_top h4,
+.belo_bottom h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  color:#c7c7c7c7;
+}
+
+
+
+.belo_top_first {
+  width:100%;
+  height: 100%;
+  background:url("https://i.ibb.co/2nWkvH2/belo-top-first-black.png") no-repeat;
+  background-size:100% 300px;
+  background-position: 0px 70px;
+  position: relative;
+}
+
+.belo_bottom_first{
+  width:100%;
+  height: 100%;
+  background:url("https://i.ibb.co/vz0M4Tz/Any-Conv-com-beosound-1-brass-transparrent-image-1.png") no-repeat;
+  background-size:100% 300px;
+  background-position: 0px 70px;
+  position: relative;
+}
+
+
+.belo_top_second {
+  width:100%;
+  height: 100%;
+  background:url("https://i.ibb.co/M22MVHw/belo-top-second-naturaloak.png") no-repeat;
+  background-size:100% 300px;
+  background-position: 0px 70px;
+  position: relative;
+}
+
+.belo_bottom_second{
+  width:100%;
+  height: 100%;
+  background:url("https://i.ibb.co/rM9kNS0/Any-Conv-com-beolab90-black-natural-oak-image-1.png") no-repeat;
+  background-size:100% 300px;
+  background-position: 0px 70px;
+  position: relative;
+}
+
+
+
+.belo_top_third {
+  width:100%;
+  height: 100%;
+  background:url("https://i.ibb.co/4g3Gg0p/belo-top-third-golden.png") no-repeat;
+  background-size:75% 250px;
+  background-position: 45px 85px;
+  position: relative;
+}
+
+.belo_bottom_third {
+  width:100%;
+  height: 100%;
+  background:url("https://i.ibb.co/zWg7mRb/72529431-1118767524988584-1950461824411369472-n-jpg.png") no-repeat;
+  background-size:75% 250px;
+  background-position: 45px 85px;
+  position: relative;
+}
+
+
+.belo_action_box_wrap {
+  width:60%;
+  position: absolute;
+  right:10%;
+  top:10%;
+  z-index: -1;
+  bottom:10%;
+}
+
+.belo_action_box_color_text {
+  padding:0.7rem 0;
+  font-size: 1rem;
+}
+
+.belo_action_box {
+  display: flex;
+  justify-content: center;
+  padding:1rem 0;
+}
+
+.belo_action_box div i {
+  font-size: 1.5rem;
+  margin:0 0.5rem;
+}
+
+.belo_action_box_price {
+  color:white;
+  font-size: 0.9rem;
+  padding:0 0 0.7rem 0;
+}
+
+
+.first_black_btn {
+  color:black;
+}
+
+.first_black_btn:hover {
+  opacity: 0.5;
+}
+
+.first_white_btn{
+  color:white;
+}
+.first_white_btn:hover {
+  opacity: 0.5;
+}
+.first_iron_btn{
+  color:#a195c7;
+}
+.first_iron_btn:hover {
+  opacity: 0.5;
+}
+
+
+
+.second_naturaloak_btn {
+  color:#88602c;
+}
+
+.second_naturaloak_btn:hover {
+  opacity: 0.5;
+}
+
+.second_black_btn{
+  color:#000000;
+}
+.second_black_btn:hover {
+  opacity: 0.5;
+}
+.second_golden_btn{
+  color:#ddb37d;
+}
+.second_golden_btn:hover {
+  opacity: 0.5;
+}
+
+
+.third_golden_btn {
+  color:#88602c;
+}
+
+.third_golden_btn:hover {
+  opacity: 0.5;
+}
+
+.third_white_btn{
+  color:#ffffff;
+}
+.third_white_btn:hover {
+  opacity: 0.5;
+}
+.third_black_btn{
+  color:#000000;
+}
+.third_black_btn:hover {
+  opacity: 0.5;
+}
+
+
+
+
+.first_brasstone_btn_bottom {
+  color:#ffab4a;
+}
+
+.first_brasstone_btn_bottom:hover {
+  opacity: 0.5;
+}
+
+.first_natural_btn_bottom{
+  color:#c7c7c7;
+}
+.first_natural_btn_bottom:hover {
+  opacity: 0.5;
+}
+.first_bronze_btn_bottom{
+  color:#ce7e24;
+}
+.first_bronze_btn_bottom:hover {
+  opacity: 0.5;
+}
+
+
+
+.second_btn {
+  color:rgba(0, 0, 0, 0.5);
+}
+
+.second_btn:hover {
+  opacity: 0.5;
+}
+
+
+
+.belo_action_box_btn {
+  text-align:center;
+}
+
+
+.belo_action_box_btn button{
+width:100px;
+height: 30px;
+font-size:0.8rem;
+font-weight: 600;
+color:silver;
+border:1px solid silver;
+}
+
+.belo_action_box_btn button:hover {
+  background:white;
+  border:1px solid rgba(0, 0, 0, 0);
+  color:black;
+}
+
+
+/* 하단 스와이퍼 */
+
+.sw2_title {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  padding:10px 0;
+}
+
+.sw2_title h3 {
+  font-size: 2rem;
+  color:rgb(218, 218, 218);
+  font-weight: 600;
+}
+
+.sw2_title span {
+  display: inline-block;
+  width:80px;
+  height: 1px;
+  border-top:3px solid white;
+}
+.sw2 {
+  width: 100%;
+  height: 600px;
+    background:rgb(36, 28, 17);
+  padding:2rem;
+}
+
+.sw2 .swiper-wrapper {
+  height:100%;
+}
+
+.sw2 .swiper-wrapper .swiper-slide img {
+  width:100%;
+  height: 360px;
+  margin: 1rem 0 0 0;
+  cursor: pointer;
+}
+
+
+.sw_text {
+  padding: 1rem 0;
+}
+
+.sw_text h4{
+  color:rgb(242, 237, 215);
+  margin-bottom: 0.7rem;
+}
+
+.sw_text h5{
+  color:rgb(240, 239, 234);
+  font-size: 0.8rem;
+}
+
+/* 푸터 */
+
+
+footer {
+  width:100%;
+  height: 300px;
+  background:rgb(46, 36, 21);
+}
+
+.foo_wrap{
+  width:1000px;
+  height: 100%;
+  margin:0 auto;
+}
+
+.top_foo {
+  width:100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_foo_text h4{
+  position: relative;
+}
+
+.foo_line {
+  cursor: pointer;
+}
+
+.foo_line::before,
+.foo_line::after{
+  content: "";
+  width:100%;
+  height:1px;
+  background:white;
+  position: absolute;
+  transform:scale(0);
+  transition: 0.5s;
+}
+
+.foo_line::before{
+  left:0%;
+  top:-30%;
+  transform-origin: left;
+}
+.foo_line::after{
+  right:0%;
+  bottom:-30%;
+  transform-origin: right;
+}
+
+.top_foo_text h4:hover .foo_line::before{
+  transform:scale(1);
+}
+
+.top_foo_text h4:hover .foo_line::after{
+  transform:scale(1);
+}
+
+.bottom_foo {
+  width:100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_foo_text,
+.bottom_foo_text{
+  width:50%;
+}
+
+.top_foo_desc,
+.bottom_foo_sns{
+  width:50%;
+}
+
+.top_foo_text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:rgb(194, 194, 194);
+}
+
+.top_foo_text img {
+  width:50px;
+  height: 50px;
+}
+
+.top_foo_desc {
+  padding:1rem 0;
+  color:rgb(194, 194, 194);
+  padding-top: 3rem;
+  padding-left: 8rem;
+}
+
+.top_foo_desc h4 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.top_foo_desc> :nth-child(2) input {
+  width:60%;
+  background:none;
+  border:none;
+  border-bottom: 1px solid white;
+  margin-bottom: 0.8rem;
+  color:white;
+}
+
+.top_foo_desc> :nth-child(2) input::placeholder {
+  color:rgba(255, 255, 255, 0.325);
+  font-size: 0.5rem;
+}
+
+
+.top_foo_desc> :nth-child(2) input:focus {
+  outline: none;
+}
+
+.top_foo_desc button {
+  font-size: 0.8rem;
+  border:none;
+  color:rgb(200, 200, 200);
+  position: relative;
+}
+
+.foo_line_btn::before {
+  content: "";
+  width:105%;
+  height: 0.5px;
+  background:white;
+  position:absolute;
+  bottom:-6%;
+  left:-5%;
+  transition: 0.7s;
+  transform-origin: left;
+  transform:scaleX(0);
+}
+
+.top_foo_desc button:hover .foo_line_btn::before {
+  transform:scaleX(1);
+}
+
+.top_foo_desc button:focus{
+  outline: none;
+}
+
+
+.bottom_foo_text{
+}
+
+.bottom_foo_text span {
+  font-size: 0.8rem;
+ color:rgb(187, 185, 178);
+}
+
+.bottom_foo_text ul {
+  display: flex;
+}
+
+.bottom_foo_text ul li{
+ margin-right: 0.5rem;
+ font-size: 0.6rem;
+}
+
+.bottom_foo_text ul li a{
+  color:rgb(189, 185, 169);
+  position: relative;
+}
+
+.bottom_line::before {
+  content: "";
+  width:100%;
+  height: 1px;
+  background:white;
+  position: absolute;
+  bottom: -30%;
+  transition: 0.7s;
+  transform-origin: left;
+  transform:scaleX(0);
+}
+
+.bottom_line:hover{
+  color:rgb(212, 151, 151);
+}
+
+.bottom_line:hover::before{
+  transform:scaleX(1);
+}
+
+.bottom_foo_sns {
+  color: rgb(194, 194, 194);
+  padding-top: 3rem;
+  padding-left: 8rem;
+}
+
+.bottom_foo_sns i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.bottom_foo_sns i:hover {
+  color:rgb(255, 123, 0);
+}
+
+
+
+
+
+
+}
